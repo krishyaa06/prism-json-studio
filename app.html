@@ -1,0 +1,38 @@
+    <section class="grid g2 studio">
+      <div class="card">
+        <div class="card-title">
+          <h2>Input</h2>
+          <div class="row">
+            <button class="btn small" id="sample">Sample</button>
+            <label class="btn small" for="file">Open file</label>
+            <input type="file" id="file" accept=".json,application/json" hidden />
+            <button class="btn small ghost" id="clear">Clear</button>
+          </div>
+        </div>
+        <textarea id="input" spellcheck="false" aria-label="JSON input" placeholder='Paste JSON here, e.g. {"hello": "world"}'></textarea>
+        <div class="row status-row">
+          <span id="status" class="pill">Waiting for JSON</span>
+          <span class="spacer"></span>
+          <label class="field inline">Indent
+            <select id="indent"><option value="2">2 spaces</option><option value="4">4 spaces</option><option value="tab">Tab</option></select>
+          </label>
+          <label class="check"><input type="checkbox" id="sort" /> Sort keys</label>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-title">
+          <div class="tabs" id="tabs">
+            <button class="on" data-v="pretty">Pretty</button><button data-v="tree">Tree</button><button data-v="min">Minify</button><button data-v="ts">TypeScript</button><button data-v="csv">CSV</button>
+          </div>
+          <div class="row">
+            <button class="btn small" id="copy">Copy</button>
+            <button class="btn small" id="dl">Download</button>
+          </div>
+        </div>
+        <div class="row query-row">
+          <input id="q" class="code" placeholder="Query path, e.g. users[*].name" aria-label="Query path" />
+        </div>
+        <pre class="out" id="out"></pre>
+      </div>
+    </section>
+    <section class="grid g4 stats" id="stats"></section>

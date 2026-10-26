@@ -1,0 +1,29 @@
+{
+  "name": "prism-json-studio",
+  "version": "1.0.0",
+  "description": "Format, validate, query and convert JSON to TypeScript or CSV, all in your browser.",
+  "scripts": {
+    "test": "node --test",
+    "start": "npx --yes serve ."
+  },
+  "keywords": [
+    "json",
+    "json-formatter",
+    "json-validator",
+    "typescript",
+    "developer-tools",
+    "devtools",
+    "vanilla-js",
+    "prism-protocol"
+  ],
+  "author": "Soumya Bhandare (krishyaa06)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/krishyaa06/prism-json-studio.git"
+  },
+  "homepage": "https://krishyaa06.github.io/prism-json-studio/",
+  "engines": {
+    "node": ">=18.17"
+  }
+}

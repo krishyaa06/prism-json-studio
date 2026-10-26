@@ -1,0 +1,13 @@
+.studio textarea{min-height:430px}
+@media (max-width:860px){.studio textarea{min-height:260px}}
+.studio .out{min-height:385px;max-height:540px}
+.status-row{margin-top:12px}
+.field.inline{flex-direction:row;align-items:center;gap:8px}.field.inline select{width:auto;padding:6px 10px}
+.query-row{margin-bottom:10px}
+.stats{margin-top:16px}
+.tree ul{list-style:none;margin:0;padding-left:18px;border-left:1px dashed var(--line-2)}
+.tree>ul{padding-left:0;border:0}
+.tree li{margin:1px 0}
+.tree summary{cursor:pointer;list-style:none}.tree summary::-webkit-details-marker{display:none}
+.tree summary::before{content:"▸ ";color:var(--faint)}.tree details[open]>summary::before{content:"▾ "}
+.k{color:#82bfff}.s{color:#5ff0b0}.n{color:#ffd166}.b{color:#d7a8ff}.z{color:#ff7b93}.c{color:var(--faint)}
